@@ -54,14 +54,27 @@ The Rosetta MCP server provides easy access to Rosetta's powerful molecular mode
 
 ## Installation
 
+### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+cd rosetta_mcp
+bash quick_setup.sh
+```
+
+The script will create the conda environment, install all dependencies, and display the Claude Code configuration. See `quick_setup.sh --help` for options like `--skip-env`.
+
+**Note:** PyRosetta requires a separate license. All scripts work in demo mode without PyRosetta.
+
 ### Prerequisites
 - Conda or Mamba (mamba recommended for faster installation)
 - Python 3.10+
 - PyRosetta license (academic or commercial - optional for demo mode)
 
-### Create Environment
+### Manual Installation (Alternative)
 
-Please strictly follow the information in `reports/step3_environment.md` to obtain the procedure to setup the environment. The complete workflow is shown below:
+If you prefer manual installation or need to customize the setup, follow `reports/step3_environment.md`:
 
 ```bash
 # Navigate to the MCP directory
